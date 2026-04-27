@@ -26,9 +26,15 @@ export default function Navbar() {
     };
   }, []);
 
+  // Lock body scroll when menu open
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileMenuOpen]);
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <Link href="/" className="logo">
+      <Link href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
         PIXELAT.AD
       </Link>
       
@@ -47,12 +53,25 @@ export default function Navbar() {
       <div 
         className={`mobile-menu-btn ${mobileMenuOpen ? 'active' : ''}`}
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        aria-label="Toggle menu"
       >
         <span></span>
         <span></span>
       </div>
 
-      {/* Mobile nav overlay can be added here or centrally managed later */}
+      {/* Mobile Menu Overlay */}
+      <div className={`mobile-menu-overlay ${mobileMenuOpen ? 'open' : ''}`}>
+        <nav className="mobile-nav-links">
+          <Link href="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
+          <Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+          <Link href="/work" onClick={() => setMobileMenuOpen(false)}>Work</Link>
+          <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+        </nav>
+        <div className="mobile-menu-footer">
+          <span className="local-time">{time}</span>
+        </div>
+      </div>
     </nav>
   );
 }

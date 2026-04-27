@@ -12,10 +12,10 @@ export default function Contact() {
       />
 
       <section className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) 2fr', gap: '6rem' }}>
+        <div className="contact-grid">
             
             {/* Contact Info Sidebar */}
-            <div>
+            <div className="contact-info">
                 <div style={{ marginBottom: '3rem' }}>
                     <h4 style={{ fontFamily: 'var(--f-mono)', color: 'var(--c-red)', marginBottom: '1rem' }}>[ EMAIL ]</h4>
                     <p style={{ fontSize: '1.2rem' }}>{siteData.email}</p>
@@ -32,8 +32,8 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div style={{ background: 'rgba(17, 17, 26, 0.2)', padding: '3rem', border: '1px solid var(--c-grid)' }}>
-                <form style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+                <form className="contact-form">
+                    <div className="form-row">
                         <div>
                             <label style={{ display: 'block', fontFamily: 'var(--f-mono)', fontSize: '0.8rem', color: 'var(--c-white-dim)', marginBottom: '0.5rem' }}>NAME</label>
                             <input type="text" style={{ width: '100%', background: 'var(--c-bg)', border: '1px solid var(--c-grid)', padding: '1rem', color: 'var(--c-white)', outline: 'none' }} />

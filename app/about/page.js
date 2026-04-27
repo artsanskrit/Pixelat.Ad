@@ -31,7 +31,7 @@ export default function About() {
           <span className="section-line"></span>
           <span className="section-name glitch-text" data-text="OUR_PROCESS">OUR_PROCESS</span>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem' }}>
+        <div className="process-grid">
           <div>
             <h3 style={{fontSize: '2rem', marginBottom: '1rem', color: 'var(--c-red)'}}>Discovery.</h3>
             <p style={{color: 'var(--c-white-dim)', lineHeight: 1.8}}>We dive deep into your brand, market, and audience to uncover the strategic insights that will drive our creative direction.</p>
