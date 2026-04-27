@@ -937,6 +937,48 @@ section {
   color: var(--c-white-muted);
 }
 
+/* ─── Snake D-Pad (mobile controls) ──────────────────────────────── */
+.snake-dpad {
+  display: none; /* Hidden on desktop */
+}
+
+@media (max-width: 768px), (hover: none) {
+  .snake-dpad {
+    display: grid;
+    grid-template-columns: repeat(3, 52px);
+    grid-template-rows: repeat(3, 52px);
+    justify-content: center;
+    gap: 4px;
+    margin-top: 1rem;
+    user-select: none;
+  }
+  .dpad-btn {
+    background: rgba(17, 17, 26, 0.6);
+    border: 1px solid var(--c-grid);
+    color: var(--c-white-dim);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  .dpad-btn:active, .dpad-btn:focus {
+    background: rgba(229, 51, 63, 0.2);
+    border-color: var(--c-red);
+    color: var(--c-white);
+    outline: none;
+  }
+  .dpad-up     { grid-column: 2; grid-row: 1; }
+  .dpad-left   { grid-column: 1; grid-row: 2; }
+  .dpad-center { grid-column: 2; grid-row: 2; background: transparent; border: none; cursor: default; pointer-events: none; }
+  .dpad-right  { grid-column: 3; grid-row: 2; }
+  .dpad-down   { grid-column: 2; grid-row: 3; }
+}
+
 /* ─── Desktop Layout Classes ─────────────────────────────────────── */
 
 /* Contact page */
