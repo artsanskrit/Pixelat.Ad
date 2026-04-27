@@ -1,7 +1,7 @@
-# Wrangler configuration for Cloudflare Pages
-# Name must match the Cloudflare Pages project name
+# Wrangler configuration for Cloudflare Workers with static assets
 name = "pixelatad"
 compatibility_date = "2024-09-23"
 
-# Tell Wrangler this is a Pages project and where the build outputs
-pages_build_output_dir = "./out"
+# Serve the Next.js static export as a Workers Assets site (no main script needed)
+[assets]
+directory = "./out"
