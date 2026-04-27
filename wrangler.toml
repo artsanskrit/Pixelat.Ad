@@ -1,0 +1,4 @@
+# Wrangler configuration for Cloudflare Pages / Workers
+# Worker name must match the Cloudflare Pages project name (pixelatad)
+name = "pixelatad"
+compatibility_date = "2024-09-23"
