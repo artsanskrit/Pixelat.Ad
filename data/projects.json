@@ -1,0 +1,146 @@
+[
+  {
+    "slug": "luxe-cosmetics",
+    "title": "Luxe Cosmetics",
+    "category": "branding",
+    "tagline": "Beauty redefined through pixel-perfect branding",
+    "description": "A complete luxury beauty brand identity that fuses elegance with modern minimalism. We crafted every touchpoint — from packaging to digital presence — to resonate with discerning consumers who demand both substance and style.",
+    "challenge": "Luxe Cosmetics needed to stand out in an oversaturated beauty market. Their previous branding felt dated and failed to communicate their commitment to premium, ethically-sourced ingredients.",
+    "solution": "We developed a visual identity rooted in contrast — pairing rich blacks with delicate gold foils, complemented by serif typography that whispers luxury. Every asset was designed mobile-first, ensuring the brand felt commanding on screens of all sizes.",
+    "image": "/images/portfolio1.png",
+    "client": "Luxe Cosmetics Inc.",
+    "year": "2024",
+    "services": ["Brand Strategy", "Visual Identity", "Packaging Design", "Digital Guidelines"],
+    "results": [
+      { "metric": "Brand Awareness", "value": "+340%", "detail": "social impressions within 3 months" },
+      { "metric": "Sales Increase", "value": "+85%", "detail": "online sales growth post-rebrand" },
+      { "metric": "Engagement", "value": "4.2x", "detail": "increase in social media engagement" }
+    ],
+    "gallery": ["/images/portfolio1.png", "/images/portfolio2.png", "/images/portfolio3.png"],
+    "testimonial": {
+      "quote": "Pixelat Ad transformed our brand from forgettable to unforgettable. Every detail was pixel-perfect.",
+      "author": "Sarah Chen",
+      "role": "CEO, Luxe Cosmetics"
+    }
+  },
+  {
+    "slug": "finflow-app",
+    "title": "FinFlow App",
+    "category": "ui-ux",
+    "tagline": "Dark mode perfection for modern fintech",
+    "description": "A revolutionary fintech banking application designed with a dark-first aesthetic. FinFlow redefines how millennials and Gen-Z interact with their finances through intuitive gestures, real-time analytics, and a sleek interface that makes money management feel effortless.",
+    "challenge": "Traditional banking apps were bloated, confusing, and visually uninspiring. FinFlow needed an interface that simplified complex financial data while feeling premium and trustworthy.",
+    "solution": "We designed a gesture-driven, dark-mode-first mobile experience with real-time data visualization. Custom micro-animations guide users through transactions, while a modular card system presents financial insights in digestible chunks.",
+    "image": "/images/portfolio2.png",
+    "client": "FinFlow Technologies",
+    "year": "2024",
+    "services": ["UX Research", "UI Design", "Prototyping", "Design System"],
+    "results": [
+      { "metric": "App Rating", "value": "4.9★", "detail": "on App Store within first month" },
+      { "metric": "User Retention", "value": "92%", "detail": "30-day retention rate" },
+      { "metric": "Downloads", "value": "500K+", "detail": "in the first quarter" }
+    ],
+    "gallery": ["/images/portfolio2.png", "/images/portfolio1.png", "/images/portfolio4.png"],
+    "testimonial": {
+      "quote": "The team didn't just design an app — they designed an experience. Our users literally thank us for the UI.",
+      "author": "Marcus Wei",
+      "role": "CTO, FinFlow"
+    }
+  },
+  {
+    "slug": "vogue-street",
+    "title": "Vogue Street",
+    "category": "marketing",
+    "tagline": "Social media campaign that broke the internet",
+    "description": "A viral social media campaign for an emerging fashion brand that turned heads across Instagram, TikTok, and Pinterest. Through strategic content creation and influencer partnerships, we positioned Vogue Street as the next must-know streetwear label.",
+    "challenge": "With zero brand recognition and a tight budget, Vogue Street needed a social media strategy that could compete with established fashion houses and generate genuine organic buzz.",
+    "solution": "We created a guerrilla-style UGC campaign featuring micro-influencers, AR try-on filters, and a TikTok challenge that went viral. Every piece of content was designed to be screenshot-worthy and shareable.",
+    "image": "/images/portfolio3.png",
+    "client": "Vogue Street Apparel",
+    "year": "2023",
+    "services": ["Social Strategy", "Content Creation", "Influencer Marketing", "Paid Ads"],
+    "results": [
+      { "metric": "Impressions", "value": "12M+", "detail": "across platforms in 6 weeks" },
+      { "metric": "Follower Growth", "value": "+2800%", "detail": "Instagram followers gained" },
+      { "metric": "Revenue", "value": "3x", "detail": "increase in direct-to-consumer sales" }
+    ],
+    "gallery": ["/images/portfolio3.png", "/images/portfolio5.png", "/images/portfolio6.png"],
+    "testimonial": {
+      "quote": "They turned our unknown brand into a trending topic. The content quality was insane.",
+      "author": "Amara Johnson",
+      "role": "Founder, Vogue Street"
+    }
+  },
+  {
+    "slug": "stride-sneakers",
+    "title": "Stride Sneakers",
+    "category": "web",
+    "tagline": "E-commerce built for sneakerheads",
+    "description": "A high-performance e-commerce platform for a premium sneaker brand. Built with speed and visual impact in mind, the site features 3D product viewers, seamless checkout, and a drop countdown system that drives hype and urgency.",
+    "challenge": "Stride needed an e-commerce site that matched the energy of sneaker culture — fast, bold, and drop-ready. Their previous site couldn't handle traffic spikes during limited releases.",
+    "solution": "We built a headless commerce platform with edge caching, 3D WebGL product previews, and a queue system that handles 100K+ concurrent users during drops. The design uses bold typography and cinematic product photography.",
+    "image": "/images/portfolio4.png",
+    "client": "Stride Athletics",
+    "year": "2024",
+    "services": ["Web Design", "Frontend Development", "E-commerce", "Performance Optimization"],
+    "results": [
+      { "metric": "Load Speed", "value": "0.8s", "detail": "average page load time" },
+      { "metric": "Conversion", "value": "+156%", "detail": "increase in conversion rate" },
+      { "metric": "Drop Sales", "value": "$2.4M", "detail": "revenue from single product drop" }
+    ],
+    "gallery": ["/images/portfolio4.png", "/images/portfolio1.png", "/images/portfolio2.png"],
+    "testimonial": {
+      "quote": "Our drops used to crash the site. Now they crash records. Pixelat Ad built us a machine.",
+      "author": "Jake Torres",
+      "role": "CMO, Stride Athletics"
+    }
+  },
+  {
+    "slug": "abstract-motion",
+    "title": "Abstract Motion",
+    "category": "motion",
+    "tagline": "3D motion graphics that stop scrollers in their tracks",
+    "description": "A series of 3D motion graphics and animated brand assets for a cutting-edge tech company's product launch. These assets lived across social, web, and event screens — creating a unified visual language that felt like the future.",
+    "challenge": "The client was launching AI-powered hardware and needed visuals that communicated innovation without alienating non-technical audiences. Static images couldn't capture the product's dynamic nature.",
+    "solution": "We created a library of abstract 3D animations using procedural generation — particles, data streams, and morphing geometries that evoke intelligence and precision. Each asset was rendered in multiple formats for cross-platform deployment.",
+    "image": "/images/portfolio5.png",
+    "client": "NeuralTech Systems",
+    "year": "2023",
+    "services": ["3D Animation", "Motion Graphics", "Visual Effects", "Art Direction"],
+    "results": [
+      { "metric": "View Time", "value": "+420%", "detail": "increase in average video watch time" },
+      { "metric": "Social Shares", "value": "45K+", "detail": "organic shares across platforms" },
+      { "metric": "Event Impact", "value": "98%", "detail": "positive attendee feedback score" }
+    ],
+    "gallery": ["/images/portfolio5.png", "/images/portfolio3.png", "/images/portfolio6.png"],
+    "testimonial": {
+      "quote": "People don't just watch our content anymore — they feel it. The motion work is otherworldly.",
+      "author": "Dr. Priya Patel",
+      "role": "VP Marketing, NeuralTech"
+    }
+  },
+  {
+    "slug": "sakura-fusion",
+    "title": "Sakura Fusion",
+    "category": "branding",
+    "tagline": "Where Japanese tradition meets modern dining",
+    "description": "A complete brand identity system for a high-end Japanese fusion restaurant. From logo design to menu layouts, environmental graphics, and a reservation system — every element tells the story of tradition meeting innovation.",
+    "challenge": "Sakura Fusion needed branding that honored Japanese aesthetic principles while feeling contemporary and approachable. The previous identity was generic and didn't reflect the chef's innovative fusion philosophy.",
+    "solution": "We built a brand system around the concept of 'ma' (negative space) — using generous whitespace, a restrained color palette of charcoal and sakura pink, and a custom logotype inspired by calligraphic brushstrokes.",
+    "image": "/images/portfolio6.png",
+    "client": "Sakura Fusion Restaurant",
+    "year": "2024",
+    "services": ["Brand Identity", "Menu Design", "Environmental Graphics", "Web Design"],
+    "results": [
+      { "metric": "Reservations", "value": "+210%", "detail": "increase in online reservations" },
+      { "metric": "Press Coverage", "value": "15+", "detail": "features in food & design publications" },
+      { "metric": "Revenue", "value": "+65%", "detail": "year-over-year revenue growth" }
+    ],
+    "gallery": ["/images/portfolio6.png", "/images/portfolio1.png", "/images/portfolio5.png"],
+    "testimonial": {
+      "quote": "They understood the soul of our cuisine and translated it into a visual language that speaks volumes.",
+      "author": "Chef Kenji Yamamoto",
+      "role": "Owner, Sakura Fusion"
+    }
+  }
+]

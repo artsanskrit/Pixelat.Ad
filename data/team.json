@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Alex Rivera",
+    "role": "Creative Director",
+    "image": "/images/team1.png",
+    "bio": "With over 12 years in creative direction, Alex has led campaigns for Fortune 500 brands and disruptive startups alike. A firm believer that great design is equal parts art and strategy.",
+    "socials": {
+      "instagram": "#",
+      "linkedin": "#",
+      "dribbble": "#"
+    }
+  },
+  {
+    "name": "Maya Chen",
+    "role": "Lead Designer",
+    "image": "/images/team2.png",
+    "bio": "Maya specializes in visual identity systems and UI design. Her work has been recognized by Awwwards, CSS Design Awards, and featured in Communication Arts. She thinks in systems and feels in pixels.",
+    "socials": {
+      "instagram": "#",
+      "linkedin": "#",
+      "behance": "#"
+    }
+  },
+  {
+    "name": "Jordan Blake",
+    "role": "Tech Lead",
+    "image": "/images/team3.png",
+    "bio": "Full-stack developer turned creative technologist. Jordan bridges the gap between design and engineering, building performant, accessible experiences that push the boundaries of what's possible on the web.",
+    "socials": {
+      "github": "#",
+      "linkedin": "#",
+      "twitter": "#"
+    }
+  }
+]

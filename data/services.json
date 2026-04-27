@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "branding-identity",
+    "title": "Branding & Identity",
+    "icon": "◆",
+    "shortDesc": "Building brands that resonate, disrupt, and endure.",
+    "description": "We don't just design logos — we architect brand ecosystems. From strategic positioning to visual identity systems, we create the foundational elements that make brands unforgettable. Every color, typeface, and pixel is chosen with intention.",
+    "features": [
+      "Brand Strategy & Positioning",
+      "Logo & Visual Identity",
+      "Brand Guidelines & Systems",
+      "Packaging Design",
+      "Brand Voice & Messaging"
+    ]
+  },
+  {
+    "slug": "ui-ux-design",
+    "title": "UI/UX Design",
+    "icon": "◇",
+    "shortDesc": "Interfaces that feel intuitive and look extraordinary.",
+    "description": "Great design is invisible — it just works. We combine deep user research with cutting-edge interface design to create digital experiences that delight users and drive business results. Every interaction is purposeful.",
+    "features": [
+      "User Research & Personas",
+      "Wireframing & Prototyping",
+      "Interface Design",
+      "Design Systems",
+      "Usability Testing"
+    ]
+  },
+  {
+    "slug": "social-media-marketing",
+    "title": "Social Media Marketing",
+    "icon": "▣",
+    "shortDesc": "Content strategies that break algorithms and build communities.",
+    "description": "We craft scroll-stopping content and data-driven strategies that turn followers into fans and fans into customers. From organic growth to paid amplification, we make your brand impossible to ignore on every platform.",
+    "features": [
+      "Content Strategy & Calendar",
+      "Creative Production",
+      "Community Management",
+      "Influencer Partnerships",
+      "Performance Analytics"
+    ]
+  },
+  {
+    "slug": "digital-advertising",
+    "title": "Digital Advertising",
+    "icon": "▲",
+    "shortDesc": "Performance campaigns that turn clicks into conversions.",
+    "description": "Every dollar counts. We build and optimize high-performance ad campaigns across Google, Meta, TikTok, and programmatic networks. Our data-first approach ensures maximum ROI with creative that converts.",
+    "features": [
+      "Campaign Strategy",
+      "Creative Ad Design",
+      "A/B Testing & Optimization",
+      "Retargeting & Audiences",
+      "ROI Reporting"
+    ]
+  },
+  {
+    "slug": "web-design-development",
+    "title": "Web Design & Development",
+    "icon": "⬡",
+    "shortDesc": "Websites that load fast, look stunning, and convert.",
+    "description": "We build websites that are as beautiful as they are performant. From marketing sites to complex web applications, our full-stack team delivers pixel-perfect frontends with robust, scalable backends.",
+    "features": [
+      "Responsive Web Design",
+      "Frontend Development",
+      "CMS Integration",
+      "E-commerce Solutions",
+      "Performance Optimization"
+    ]
+  },
+  {
+    "slug": "motion-graphics",
+    "title": "Motion Graphics",
+    "icon": "◈",
+    "shortDesc": "Animations that bring brands to life in motion.",
+    "description": "Static is dead. We create dynamic motion graphics, 3D animations, and video content that captures attention in a world of infinite scroll. From social snippets to cinematic brand films, we make your story move.",
+    "features": [
+      "2D & 3D Animation",
+      "Brand Video Production",
+      "Social Media Motion Content",
+      "Product Visualization",
+      "Event & Stage Visuals"
+    ]
+  }
+]

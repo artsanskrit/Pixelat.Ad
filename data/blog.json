@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "future-of-branding-in-ai-era",
+    "title": "The Future of Branding in the AI Era",
+    "excerpt": "How artificial intelligence is reshaping brand identity — and why human creativity still matters more than ever.",
+    "category": "Strategy",
+    "date": "2025-02-15",
+    "readTime": "6 min",
+    "image": "/images/portfolio5.png"
+  },
+  {
+    "slug": "dark-mode-design-principles",
+    "title": "Dark Mode Done Right: Design Principles That Work",
+    "excerpt": "A deep dive into contrast ratios, color theory, and UX patterns that make dark interfaces beautiful and accessible.",
+    "category": "Design",
+    "date": "2025-01-28",
+    "readTime": "8 min",
+    "image": "/images/portfolio2.png"
+  },
+  {
+    "slug": "scroll-animations-performance",
+    "title": "Scroll Animations Without the Jank",
+    "excerpt": "How we use GSAP ScrollTrigger and GPU compositing to build buttery-smooth scroll experiences at 60fps.",
+    "category": "Development",
+    "date": "2025-01-10",
+    "readTime": "5 min",
+    "image": "/images/portfolio4.png"
+  },
+  {
+    "slug": "social-media-trends-2025",
+    "title": "Social Media Trends That Actually Matter in 2025",
+    "excerpt": "Forget the noise. Here are the platform shifts and content strategies that will define the next 12 months.",
+    "category": "Marketing",
+    "date": "2024-12-20",
+    "readTime": "7 min",
+    "image": "/images/portfolio3.png"
+  },
+  {
+    "slug": "motion-design-brand-storytelling",
+    "title": "Motion Design as Brand Storytelling",
+    "excerpt": "Why static logos are dead and how kinetic identity systems are becoming the new standard for premium brands.",
+    "category": "Motion",
+    "date": "2024-11-15",
+    "readTime": "4 min",
+    "image": "/images/portfolio6.png"
+  }
+]

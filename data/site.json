@@ -1,0 +1,20 @@
+{
+  "name": "Pixelat Ad",
+  "tagline": "Creative Ideas. Pixel Perfect Execution.",
+  "description": "Where pixels meet purpose. A creative digital agency crafting pixel-perfect experiences in branding, design, and digital marketing.",
+  "email": "hello@pixelatad.com",
+  "phone": "+1 (234) 567-890",
+  "address": "Design District, NY",
+  "established": "2018",
+  "socials": {
+    "instagram": "#",
+    "linkedin": "#",
+    "dribbble": "#",
+    "behance": "#"
+  },
+  "stats": {
+    "projects": 150,
+    "clients": 80,
+    "years": 7
+  }
+}
