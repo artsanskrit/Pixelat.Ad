@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const COLS = 24;
 const ROWS = 24;
@@ -18,9 +19,16 @@ export default function HeroGraphic() {
   const [level,    setLevel]    = useState(1);
   const [status,   setStatus]   = useState('PLAYING'); // 'PLAYING' | 'GAME_OVER'
   const [canvasSize, setCanvasSize] = useState(400);
+  const [isFirstGameOver, setIsFirstGameOver] = useState(true);
 
   // ── Touch swipe tracking ──────────────────────────────────────────
   const touchStart = useRef(null);
+
+  // ── Check localStorage for first game over ───────────────────────
+  useEffect(() => {
+    const seen = localStorage.getItem('pixelatad_gameover_seen');
+    if (seen) setIsFirstGameOver(false);
+  }, []);
 
   // ── Initialise / reset game state ────────────────────────────────
   const initState = useCallback(() => ({
@@ -246,6 +254,9 @@ export default function HeroGraphic() {
     setStatus('PLAYING');
     setScore(0);
     setLevel(1);
+    // After first game-over is dismissed, all future ones show compact screen
+    localStorage.setItem('pixelatad_gameover_seen', '1');
+    setIsFirstGameOver(false);
   };
 
   return (
@@ -262,12 +273,12 @@ export default function HeroGraphic() {
           onTouchEnd={handleTouchEnd}
         />
 
-        {/* Game Over Overlay */}
-        {status === 'GAME_OVER' && (
+        {/* Game Over Overlay — First Time: full marketing message */}
+        {status === 'GAME_OVER' && isFirstGameOver && (
           <div style={{
             position: 'absolute',
             inset: 0,
-            background: 'rgba(5,5,8,0.93)',
+            background: 'rgba(5,5,8,0.95)',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -277,18 +288,14 @@ export default function HeroGraphic() {
             gap: '0.75rem',
             backdropFilter: 'blur(4px)',
           }}>
-            {/* Glitchy header */}
             <div style={{ fontFamily: 'var(--f-heading)', fontSize: 'clamp(2rem, 6vw, 3rem)', color: '#e5333f', letterSpacing: '0.1em', lineHeight: 1 }}>
               GAME_OVER
             </div>
             <div style={{ fontFamily: 'var(--f-mono)', fontSize: '0.7rem', color: '#84849a', letterSpacing: '0.15em' }}>
               SCORE: {score.toString().padStart(4, '0')} · LVL {level}
             </div>
-
-            {/* Divider */}
             <div style={{ width: '60%', height: '1px', background: 'var(--c-grid)', margin: '0.25rem 0' }} />
-
-            {/* Marketing message */}
+            <Image src="/logo.png" alt="Pixelat.Ad" width={140} height={35} style={{ height: '28px', width: 'auto', objectFit: 'contain', opacity: 0.9 }} />
             <div style={{ fontFamily: 'var(--f-heading)', fontSize: 'clamp(1.2rem, 4vw, 1.6rem)', color: '#e8e8f0', lineHeight: 1.2 }}>
               Your brand is stuck<br/>
               <span style={{ color: '#e5333f' }}>in a loop.</span>
@@ -297,8 +304,6 @@ export default function HeroGraphic() {
               Just like this snake, your marketing<br/>might be going in circles.
               <br/>We fix that — <span style={{ color: '#00f0ff' }}>pixel by pixel.</span>
             </p>
-
-            {/* CTA buttons */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', width: '100%', maxWidth: '240px', marginTop: '0.25rem' }}>
               <Link
                 href="/services"
@@ -337,6 +342,71 @@ export default function HeroGraphic() {
               >
                 Try Again [ SPACE ]
               </button>
+            </div>
+          </div>
+        )}
+
+        {/* Game Over Overlay — Returning player: compact restart prompt */}
+        {status === 'GAME_OVER' && !isFirstGameOver && (
+          <div style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'rgba(5,5,8,0.88)',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '1.5rem',
+            textAlign: 'center',
+            gap: '0.6rem',
+            backdropFilter: 'blur(4px)',
+          }}>
+            <div style={{ fontFamily: 'var(--f-heading)', fontSize: 'clamp(2rem, 6vw, 3rem)', color: '#e5333f', letterSpacing: '0.1em', lineHeight: 1 }}>
+              GAME_OVER
+            </div>
+            <div style={{ fontFamily: 'var(--f-mono)', fontSize: '0.7rem', color: '#84849a', letterSpacing: '0.15em' }}>
+              SCORE: {score.toString().padStart(4, '0')} · LVL {level}
+            </div>
+            <div style={{ width: '60%', height: '1px', background: 'var(--c-grid)', margin: '0.25rem 0' }} />
+            <p style={{ fontFamily: 'var(--f-mono)', fontSize: '0.7rem', color: '#84849a' }}>
+              Better luck next time, pixel warrior.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', width: '100%', maxWidth: '220px', marginTop: '0.5rem' }}>
+              <button
+                onClick={restart}
+                style={{
+                  background: '#e5333f',
+                  border: 'none',
+                  color: '#fff',
+                  fontFamily: 'var(--f-mono)',
+                  fontSize: '0.7rem',
+                  letterSpacing: '0.12em',
+                  padding: '0.75rem 1rem',
+                  textTransform: 'uppercase',
+                  cursor: 'pointer',
+                  clipPath: 'polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%)',
+                }}
+              >
+                Play Again [ SPACE ]
+              </button>
+              <Link
+                href="/services"
+                style={{
+                  display: 'block',
+                  background: 'transparent',
+                  border: '1px solid #222233',
+                  color: '#84849a',
+                  fontFamily: 'var(--f-mono)',
+                  fontSize: '0.62rem',
+                  letterSpacing: '0.1em',
+                  padding: '0.65rem 1rem',
+                  textAlign: 'center',
+                  textTransform: 'uppercase',
+                  textDecoration: 'none',
+                }}
+              >
+                View Our Services
+              </Link>
             </div>
           </div>
         )}

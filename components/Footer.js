@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import PixelBracket from './PixelBracket';
 
 export default function Footer({ siteData }) {
@@ -8,7 +9,9 @@ export default function Footer({ siteData }) {
         <div className="footer-grid">
           
           <div className="footer-brand">
-            <h3 className="footer-logo">PIXELAT.AD</h3>
+            <div className="footer-logo">
+              <Image src="/logo.png" alt="Pixelat.Ad" width={160} height={40} style={{ height: '36px', width: 'auto', objectFit: 'contain' }} />
+            </div>
             <p className="footer-desc">Creative Ideas.<br/>Pixel Perfect Execution.</p>
             <div className="system-status">
               <span className="status-dot"></span>

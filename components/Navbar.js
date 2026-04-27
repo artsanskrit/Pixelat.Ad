@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,8 +35,8 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <Link href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
-        PIXELAT.AD
+      <Link href="/" className="logo" onClick={() => setMobileMenuOpen(false)} aria-label="Pixelat.Ad Home">
+        <Image src="/logo.png" alt="Pixelat.Ad" width={160} height={40} style={{ height: '36px', width: 'auto', objectFit: 'contain' }} priority />
       </Link>
       
       <div className="nav-links">
